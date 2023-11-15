@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+    <!--Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=The+Girl+Next+Door&display=swap"
+        rel="stylesheet"><!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Add this div outside of your existing HTML structure -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <!-- <span class="close" onclick="closeModal()">&times;</span> -->
+            <form id="nameForm">
+                <label for="username">HELLO THERE !</label>
+                <input type="text" id="username" name="username" placeholder="Enter Your Name" required>
+                <button type="submit" onclick="submitForm()" id="submitBtn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <a href="javascript:location.reload(true)"><button class="top-left-button"></button></a>
+    <h1 class="name">Happy Birthday <span class="username"></span></h1>
+    <canvas id="balloonCanvas"></canvas>
+    <!-- Script -->
+    <script src="script.js"></script.src>
+    </body>
+</html>
